@@ -1,0 +1,17 @@
+body {
+    margin:0px;
+    padding:0px;
+}
+
+/* Set top and left margin half the size of the width/height and
+position top and left properties to 50% */
+
+.playground {
+    position:absolute;
+    height:400px;
+    width:500px;
+    margin:-200px 0 0 -250px;
+    border: solid 3px #222;
+    top:50%;
+    left:50%;
+}

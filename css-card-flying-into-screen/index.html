@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>title</title>
+<style>
+	.body {
+		margin:0px;
+		padding:0px;
+	}
+
+	.container {
+		margin:0px;
+		padding::0px;
+		width:900px;
+		height:900px;
+		border:solid 1px red;
+		
+	}
+
+	section {
+		border:solid 1px blue;
+		display:block;
+		float:left;
+		height:250px;
+		width:175px;
+		clear:both;
+		margin:3px 0px;
+		border-radius:9px;
+	}
+
+	.container:hover section {
+		border:solid 1px green;
+		width:350px;
+		height:500px;
+		margin-left:300px;
+		-webkit-transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+		-ms-transform:rotate(360deg);
+		transform:rotate(360deg);
+		-moz-box-shadow: -5px -5px 5px #888;
+		-webkit-box-shadow: -5px -5px 5px #888;
+		box-shadow: -5px -5px 5px #888;
+	}
+
+	.container:hover section:hover {
+		text-transform:uppercase;
+	}
+
+	.card {
+		background-color:orange;
+		-webkit-transition: 1s linear;
+		-moz-transition: 1s linear;
+		-o-transition: 1s linear;
+		-ms-transition: 1s linear;
+		transition: 1s linear;
+	}
+
+</style>
+</head>
+<body>
+
+<div class="container">	
+	<section class="card">
+	<p>hello</p>
+	</section>
+</div>
+
+</body>
+</html>

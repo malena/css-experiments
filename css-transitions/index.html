@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#menu').change(function(quicklink) {
+	  window.location = quicklink.currentTarget.value;
+	});
+});
+
+</script>
+<style>
+
+	section {
+		display:block;
+		float:left;
+		height:25px;
+		width:100px;
+		clear:both;
+		margin:3px 0px;
+		border-radius: 9px;
+	}
+
+	section:hover {
+		width:500px;
+	}
+
+	.orange {
+		background-color:orange;
+		-webkit-transition: 3s ease;
+		-moz-transition: 3s ease;
+		-o-transition: 3s ease;
+		-ms-transition: 3s ease;
+		transition: 3s ease;
+	}
+
+	.blue {
+		background-color:blue;
+		-webkit-transition: 3s linear;
+		-moz-transition: 3s linear;
+		-o-transition: 3s linear;
+		-ms-transition: 3s linear;
+		transition: 3s linear;
+	}
+
+	.green {
+		background-color:green;
+		-webkit-transition: 3s ease-in;
+		-moz-transition: 3s ease-in;
+		-o-transition: 3s ease-in;
+		-ms-transition: 3s ease-in;
+		transition: 3s ease-in;
+	}
+	
+	.yellow {
+		background-color:yellow;
+		-webkit-transition: 3s ease-out;
+		-moz-transition: 3s ease-out;
+		-o-transition: 3s ease-out;
+		-ms-transition: 3s ease-out;
+		transition: 3s ease-out;
+	}
+
+	.red {
+		background-color:red;
+		-webkit-transition: 3s ease-out;
+		-moz-transition: 3s ease-out;
+		-o-transition: 3s ease-out;
+		-ms-transition: 3s ease-out;
+		transition: 3s ease-out;
+	}
+
+
+</style>
+</head>
+<body>
+
+	<section class="orange">
+	</section>
+	<section class="blue">
+	</section>
+	<section class="green">
+	</section>
+	<section class="yellow">
+	</section>
+	<section class="red">
+	</section>
+
+
+
+</body>
+</html>

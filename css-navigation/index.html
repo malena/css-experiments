@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#two .sub-nav').css('display', 'block');
+		$('.sub-nav').on('hover', function(){
+			$('.sub-nav').css('display', '');
+		});
+	});
+</script>
+<style>
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	li {
+		float: left;
+		display: block;
+		text-align: center;
+	}
+
+	#main-nav {
+		position: relative;
+	}
+
+	li.nav-title {
+		margin-right: 5px;
+		width: 80px;
+		height: 30px;
+		background-color: #eee;
+	}
+
+	li.nav-title:hover .sub-nav {
+		display: block;
+	}
+
+	ul.sub-nav {
+		display: none;
+		width: 600px;
+		height: 40px;
+		background-color: yellow;
+		position: absolute;
+		left: 0;
+	}
+
+</style>
+</head>
+<body>
+<nav>
+	<ul id="main-nav">
+		<li class="nav-title" id="one">
+			<a href="#">ONE</a>
+			<ul class="sub-nav">
+				<li><a href="#">ONE-AYE</a></li>
+				<li><a href="#">ONE-BEE</a></li>
+				<li><a href="#">ONE-CEE</a></li>
+			</ul>
+		</li>
+		<li class="nav-title" id="two">
+			<a href="#">TWO</a>
+			<ul class="sub-nav">
+				<li><a href="#">TWO-AYE</a></li>
+				<li><a href="#">TWO-BEE</a></li>
+				<li><a href="#">TWO-CEE</a></li>
+			</ul>
+		</li>
+		<li class="nav-title" id="three">
+			<a href="#">THREE</a>
+			<ul class="sub-nav">
+				<li><a href="#">THREE-AYE</a></li>
+				<li><a href="#">THREE-BEE</a></li>
+				<li><a href="#">THREE-CEE</a></li>
+			</ul>
+		</li>
+		<li class="nav-title" id="four">
+			<a href="#">FOUR</a>
+			<ul class="sub-nav">
+				<li><a href="#">FOUR-AYE</a></li>
+				<li><a href="#">FOUR-BEE</a></li>
+				<li><a href="#">FOUR-CEE</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+</body>
+</html>
